@@ -1,8 +1,9 @@
-﻿
+﻿//Jacob Welling Assignment 1
 
 var submit = document.getElementById("submitButton");
-
+//create click function
 submit.addEventListener("click", function () {
+    //assign variables
     var assignmentWeight = .5
     var groupProjectWeight = .1
     var quizWeight = .1
@@ -16,13 +17,13 @@ submit.addEventListener("click", function () {
     var intexPointsEarned = document.getElementById('intex').value
 
     var totalGrade = 0
-
+    //calculate total grade
     totalGrade = totalGrade + (assignmentWeight * assignmentPointsEarned)
     totalGrade = totalGrade + (groupProjectWeight * groupProjectPointsEarned)
     totalGrade = totalGrade + (quizWeight * quizPointsEarned)
     totalGrade = totalGrade + (examWeight * examPointsEarned)
     totalGrade = totalGrade + (intexWeight * intexPointsEarned)
-
+    //display total grade
     alert(totalGrade)
 
 
