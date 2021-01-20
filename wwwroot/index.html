@@ -1,6 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
+    <link href="../css/StyleSheet.css" rel="stylesheet" />
     <meta charset="utf-8" />
     <title>About Me: Jake Welling</title>
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
@@ -9,21 +10,46 @@
 </head>
 <body>
     <h1>Jake Welling</h1>
-    <img src="img/Snapchat-1129949460.jpg" height="400px"/>
+    <img src="img/Snapchat-1129949460.jpg" height="400px" />
     <br />
     <br />
     <h2>What I hope to get out of IS 413:</h2>
     <p>
-        I hope to get to know the C# language and understand how to make a complex web application. <br /> I hope to increase my programming knowledge
-        and be well versed in how enterprise-level applications are developed.  <br />If I get a project management job,
+        I hope to get to know the C# language and understand how to make a complex web application. I hope to increase my programming knowledge
+        and be well versed in how enterprise-level applications are developed. If I get a project management job,
         this knowledge will help me communicate effectively with my team members about programming projects.
     </p>
 
     <br />
-    <ul>
+    <ul class="jobList">
         <li>1. Project Manager</li>
         <li>2. Product Manager</li>
         <li>3. Web Developer</li>
     </ul>
+
+    <h2>Grade Calculator</h2>
+    <h3>Enter received grade percentage</h3>
+    <br />
+    <form>
+        <label>Assignments: </label>
+        <input id="assignments" />
+        <br />
+        <label>Group Projects: </label>
+        <input id="groupProjects" />
+        <br />
+        <label>Quizzes: </label>
+        <input id="quizzes" />
+        <br />
+        <label>Exams: </label>
+        <input id="exams" />
+        <br />
+        <label>Intex: </label>
+        <input id="intex" />
+        <br />
+        <br />
+        <input type="submit" value="Calculate Grade" id="submitButton" />
+    </form>
+    <br /><br />
+    <script src="js/gradecalc.js"></script>
 </body>
 </html>
